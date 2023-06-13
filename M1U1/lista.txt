@@ -1,6 +1,4 @@
-fotos
 mate
-moto
 celular
 notebook
 pc
