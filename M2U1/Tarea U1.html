@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones color fondo</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cuadrado rojo" onclick="colorfondo('red')"></div>
+        <div class="cuadrado verde" onclick="colorfondo('green')"></div>
+        <div class="cuadrado azul" onclick="colorfondo('blue')"></div>
+    </div>
+    <style>
+        .contenedor {
+            display: flex;
+        }
+
+        .cuadrado {
+            height: 100px;
+            width: 100px;
+        }
+
+        .rojo {
+            background-color: red;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
+        .verde {
+            background-color: green;
+        }
+    </style>
+    <!resetear color de fondo-->
+        <button onclick="resetBackground()">Resetear Color De Fondo</button>
+
+        <script>
+            function colorfondo(color) {
+                document.querySelector('body').style.background = color;
+            }
+
+            <!-- boton para resetear color de fondo-->
+            function resetBackground() {
+                document.querySelector('body').style.background = 'initial';
+            }
+
+
+        </script>
+</body>
+
+</html>

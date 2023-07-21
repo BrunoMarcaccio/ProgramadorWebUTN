@@ -13,16 +13,14 @@
         const numeros = [1, 10, 1000, 258, 159874, 789, 147963, 753, 25, 45698];
 
 
+        let mayor = 0;
         for (let i = 0; i < numeros.length; i++) {
-            console.log('tenemos ' + numeros[i])
+            if (numeros[i] > mayor) {
+                mayor = numeros[i];
+            }
         }
 
-        numeromayor = numeros[0]
-        if (numeros[i] > numeromayor) {
-            numeromayor = numeros[i];
-        } else {
-            numeros[i];
-        }
+        console.log(`El numero mayor de ${numeros} es ${mayor}`);
     </script>
 
 </body>
